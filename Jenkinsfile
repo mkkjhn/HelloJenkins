@@ -11,6 +11,8 @@ pipeline {
                     ls -lah
                 '''
                 sh 'mkdir output'
+                sh 'cd output'
+                sh 'cat info.txt'
             }
         }
     }
